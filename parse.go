@@ -98,6 +98,7 @@ func GetString(data interface{}, key string, dflt string) string {
 	return dflt
 }
 
+// GetStringArray parses a YAML value as an array of strings.
 func GetStringArray(data interface{}, key string, dflt []string) []string {
 	if value, ok := GetMapItem(data, key); ok {
 		AssertIsStringArray(key, value)
