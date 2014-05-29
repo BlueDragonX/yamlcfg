@@ -205,7 +205,7 @@ func TestGetDurationAssert(t *testing.T) {
 
 	key := "stuff"
 	data := makeData(key, "invalid")
-	GetDuration(data, key, 42 * time.Second)
+	GetDuration(data, key, 42*time.Second)
 }
 
 func TestGetSignal(t *testing.T) {
